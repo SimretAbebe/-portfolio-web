@@ -10,7 +10,7 @@ interface AnimatedDeliveryProps {
 type AnimationState = 'IDLE' | 'RUNNING' | 'DELIVERED';
 
 const AnimatedDelivery: React.FC<AnimatedDeliveryProps> = ({
-  faceSrc = '/favicon.ico',
+  faceSrc = '/simret-image.jpg',
   isActive,
   onComplete
 }) => {
@@ -130,10 +130,18 @@ const AnimatedDelivery: React.FC<AnimatedDeliveryProps> = ({
                   fill="none"
                 />
 
-                {/* Head (Favicon) */}
+                {/* Head (Profile Picture) */}
                 <foreignObject x="30" y="0" width="40" height="40">
-                  <div className="w-full h-full">
-                    <img src={faceSrc} alt="face" className="w-full h-full object-contain" />
+                  <div className="w-full h-full rounded-full border-2 border-white overflow-hidden bg-primary/20 flex items-center justify-center">
+                    <img 
+                      src={faceSrc} 
+                      alt="face" 
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        // Fallback if image fails
+                        (e.target as HTMLImageElement).src = 'https://ui-avatars.com/api/?name=Simret&background=random';
+                      }}
+                    />
                   </div>
                 </foreignObject>
 

@@ -64,7 +64,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-24 relative bg-muted/30">
       <AnimatedDelivery
-        faceSrc="/favicon.ico"
+        faceSrc="/simret-image.jpg"
         isActive={showDelivery}
         onComplete={() => {
           setShowDelivery(false);
