@@ -28,7 +28,7 @@ export const ROTATING_TEXTS: string[] = [
 export const EXPERIENCES: Experience[] = [
   {
     id: "10academy",
-    date: "Apr 2026 — present",
+    date: "April 2026 — August 2026",
     title: "AI & Machine Learning Intern",
     org: "10 Academy · Remote Internship, Addis Ababa",
     bullets: [
@@ -38,7 +38,7 @@ export const EXPERIENCES: Experience[] = [
   },
   {
     id: "melos",
-    date: "Jul 2026 — present",
+    date: "June 2026 — July 2026",
     title: "Back End Developer",
     org: "Melos Technologies PLC · Addis Ababa (Internship)",
     bullets: [
@@ -180,6 +180,21 @@ export const ACHIEVEMENTS: Achievement[] = [
 
 export const CERTIFICATES: Certificate[] = [
   {
+    id: "10academy-kaim",
+    title: "Kifiya AI Mastery Training Program (with distinction)",
+    issuer: "10 Academy & Kifiya Financial Technology",
+    date: "Aug 2026",
+    description:
+      "Completion certificate (with distinction) for my 10 Academy AI/ML internship — the Kifiya AI Mastery Training Program, covering ML engineering, data engineering, and fintech-focused financial analysis.",
+    skills: [
+      "Machine Learning Engineering",
+      "Data Engineering",
+      "Financial Analysis",
+    ],
+    credentialUrl: "/Simret Abebe cer.pdf",
+    image: "/Cer1.PNG",
+  },
+  {
     id: "hackathon",
     title: "Hackathon Finalist — SmartHire AI",
     issuer: "Bahir Dar Institute of Technology",
@@ -192,7 +207,7 @@ export const CERTIFICATES: Certificate[] = [
     id: "alx-freelancer",
     title: "ALX Freelancer Academy",
     issuer: "ALX ETHIOPIA",
-    date: "Issued Aug 2025",
+    date: "Aug 2025",
     credentialUrl: "https://savanna.alxafrica.com/certificates/Hfr75Nx3LX",
     image: "/117-freelancer-academy-2-week-certificate-simret-abebe.png",
   },
@@ -200,14 +215,14 @@ export const CERTIFICATES: Certificate[] = [
     id: "ai-for-social",
     title: "Artificial Intelligence for Social Impact",
     issuer: "Asian Development Bank Institute",
-    date: "Issued Dec 2025",
+    date: "Dec 2025",
     image: "/ai-for-social.jpg",
   },
   {
     id: "american-corner",
     title: "Web Development Boot Camp",
     issuer: "Bahirdar American Corner",
-    date: "Issued 2025",
+    date: "2025",
     skills: ["HTML", "CSS", "JavaScript"],
     image: "/american-corner.jpg",
   },
