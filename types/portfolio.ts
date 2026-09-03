@@ -6,6 +6,7 @@ export interface Project {
   github: string;
   liveDemo?: string;
   borderColor?: string;
+  image?: string;
 }
 
 export interface Experience {

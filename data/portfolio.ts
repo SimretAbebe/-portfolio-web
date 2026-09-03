@@ -59,6 +59,16 @@ export const EXPERIENCES: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    id: "fair-fee",
+    tags: ["FASTAPI", "POSTGRESQL", "DBT", "PYTHON", "DOCKER"],
+    title: "Fair Fee — Ethiopian transfer fee analyzer",
+    description:
+      "Fee transparency platform comparing real, published transfer fees across Ethiopian banks and mobile wallets (CBE, Awash, Dashen, Telebirr, M-Pesa). Models data with a dbt star schema and empirical fairness scoring engine served via FastAPI.",
+    github: "https://github.com/SimretAbebe/Fair-Fee",
+    liveDemo: "https://fair-fee.vercel.app/",
+    image: "/fair-fee.png",
+  },
+  {
     id: "bank-analytics",
     tags: ["TRANSFORMERS", "SPACY", "SHAP", "STREAMLIT"],
     title: "Ethiopian bank customer review intelligence",

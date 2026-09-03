@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { PROJECTS } from "@/data/portfolio";
 
 export default function WorkSection() {
@@ -19,9 +20,22 @@ export default function WorkSection() {
         {PROJECTS.map((project) => (
           <div
             key={project.id}
-            className="bg-[#111009] border border-[#231F19] rounded-lg p-6 sm:p-8 flex flex-col justify-between hover:border-[#C9973F] transition-colors group"
+            className="bg-[#111009] border border-[#231F19] rounded-lg p-6 sm:p-8 flex flex-col justify-between hover:border-[#C9973F] transition-colors group overflow-hidden"
           >
               <div className="space-y-4">
+                {/* Project Screenshot / Thumbnail */}
+                {project.image && (
+                  <div className="relative w-full h-44 sm:h-48 mb-4 rounded border border-[#231F19] bg-[#0B0A08] overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                )}
+
                 {/* Tech Stack Tags */}
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tIdx) => (
